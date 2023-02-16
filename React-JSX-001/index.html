@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My JSX App</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      #root {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      
+      h1 {
+        font-size: 50px;
+        text-align: center;
+      }
+      p{
+          text-align: center;
+          width: 1000px;
+          font-size: larger;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      const heading = <h1>About Us</h1>;
+      const paragraph = <p>At Zappos.com, our purpose is simple: to live and deliver WOW.</p>;
+      const para = <p>Twenty years ago, we began as a small online retailer that only sold shoes. Today, we still sell shoes - as well as clothing, handbags, accessories, and more. That "more" is providing the very best customer service, customer experience, and company culture. We aim to inspire the world by showing it's possible to simultaneously deliver happiness to customers, employees, vendors, shareholders, and the community in a long-term, sustainable way.</p>
+      const para2 = <p> We hope that in the future people won't even realize we started selling shoes online. Instead, they'll know Zappos as a service company that just happens to sell____</p>
+      
+      ReactDOM.render(
+        <div>
+          {heading}
+          {paragraph}
+          {para}
+          {para2}
+        </div>,
+        document.getElementById('root')
+      );
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.0.0/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.0.0/umd/react-dom.development.js"></script>
+  </body>
+</html>
